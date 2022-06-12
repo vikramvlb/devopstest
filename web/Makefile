@@ -1,8 +1,8 @@
 #!/usr/bin/env make
 
 run_website:
-	docker build -t icecream.in . && \
-		docker run -p 5000:80 -d --name icecream.in --rm icecream.in
+	docker build -t icecream.com . && \
+		docker run -p 5001:80 -d --name icecream.com --rm icecream.com
 
 stop_website:
-	docker stop icecream.in
+	docker stop icecream.com
